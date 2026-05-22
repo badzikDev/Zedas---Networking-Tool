@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zedas"
+version = "1.0.0"
+description = "A custom network asset tracking and capture engine."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "scapy>=2.5.0",
+    "click>=8.0.0"
+]
+
+[project.scripts]
+zedas = "zedas.main:cli"
